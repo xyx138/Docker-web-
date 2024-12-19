@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+  node-app:
+    image: xyx138/node-mysql
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=xyx
+      - DB_PASSWORD=xyx
+      - DB_NAME=hospital
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: Ustb1234
+      MYSQL_DATABASE: hospital
+    volumes:
+      - mysql_data:/var/lib/mysql  # 数据库数据持久化
+
+volumes:
+  mysql_data:

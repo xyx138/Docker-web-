@@ -20,7 +20,7 @@
 
 5. 确保3306端口未被占用（mysql服务的默认端口号）
 
-6. 启动项目
+6. 启动在`docker-compose.yml`文件所在目录执行下面的命令行
 
    ````yml
    docker-compose up --build

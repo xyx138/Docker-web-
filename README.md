@@ -2,31 +2,15 @@
 
 ### 快速启动：
 
-1. 确保你安装了docker
+1. 将仓库拉取到本地，进入项目目录
 
-2. 登录docker hub
-
-   ```docker
-   docker login
-   ```
-
-3. 拉取远程仓库的镜像
-
-   ```docker
-   docker pull xyx138/node-mysql
-   ```
-
-4. 下载`docker-compose.yml`到本地
-
-5. 确保3306端口未被占用（mysql服务的默认端口号）
-
-6. 启动在`docker-compose.yml`文件所在目录执行下面的命令行
-
+2. 启动项目
+   
    ````yml
-   docker-compose up --build
+   docker-compose up --build 或 docker compose up --build
    ````
 
-7. 点击访问本地3000端口
+3. [点击访问](http://localhost:3000/#/login)
 
    ````
    账号: xyx

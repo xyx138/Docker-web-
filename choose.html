@@ -1,0 +1,170 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button-wrapper{
+            margin: auto auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-wrapper">
+        <button>按钮1</button>
+        <button>按钮2</button>
+        <button>按钮3</button>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: url('https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg') no-repeat;
+      background-size: 100% 130%;
+    }
+
+    #login_box {
+      width: 20%;
+      height: 50vh;
+      background-color: #00000060;
+      margin: auto;
+      margin-top: 10%;
+      text-align: center;
+      border-radius: 10px;
+      padding: 50px 50px;
+    }
+
+    h2 {
+      color: #ffffff90;
+      margin-top: 5%;
+    }
+
+    #input-box {
+      margin-top: 5%;
+    }
+
+    span {
+      color: #fff;
+    }
+
+    input {
+      border: 0;
+      width: 60%;
+      font-size: 15px;
+      color: #fff;
+      background: transparent;
+      border-bottom: 2px solid #fff;
+      padding: 5px 10px;
+      outline: none;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 50px;
+      width: 60%;
+      height: 30px;
+      border-radius: 10px;
+      border: 0;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      font-size: 15px;
+        background-color: #ffffffa3;
+    }
+
+    #sign_up {
+      margin-top: 45%;
+      margin-left: 60%;
+    }
+
+    /* a {
+      color: #b94648;
+    } */
+
+
+    .button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 279rpx;
+    height: 80rpx;
+    padding: 24rpx;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 26rpx;
+    text-align: center;
+    border-radius: 65rpx;
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: radial-gradient(circle, #ccc 10%, transparent 10.1%);
+      transform: scale(10);
+      opacity: 0;
+      transition: all 0.45s;
+      content: '';
+    }
+
+    &:active::after {
+      transform: scale(0);
+      opacity: 0.5;
+      transition: 0s;
+    }
+  }
+  .chat-now {
+    color: #222;
+    border: 1px solid #222;
+  }
+
+  #login_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+
+  </style>
+</head>
+
+<body>
+  <div id="login_box">
+    <h2>CHOOSE</h2>
+    <div class="input_box">
+      <!-- <button><a href="#" style="text-decoration: none;">管理员</a></button> -->
+      <div class="button">
+        <span><a href="#" style="text-decoration: none; color: #fff;">管理员</a></span>
+      </div>
+    
+    </div>
+    <div class="input_box">
+        <div class="button">
+            <span><a href="#" style="text-decoration: none; color: #fff;">医生</a></span>
+          </div>
+    </div>
+    <div class="input_box">
+        <div class="button">
+            <span><a href="#" style="text-decoration: none; color: #fff;">患者</a></span>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
